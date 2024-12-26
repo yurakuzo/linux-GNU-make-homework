@@ -1,0 +1,11 @@
+CC=gcc
+
+build3: main.o src1.o
+	$(CC) $^ -o $@
+
+main.o: main.c src1.h
+	$(CC) -c $<
+
+src1.o: src1.c src1.h
+	$(CC) -c $<
+

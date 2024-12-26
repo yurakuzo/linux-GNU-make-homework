@@ -1,0 +1,6 @@
+main.o: main.c src1.h
+	gcc -c main.c
+
+src1.o: src1.c src1.h
+	gcc -c src1.c
+
